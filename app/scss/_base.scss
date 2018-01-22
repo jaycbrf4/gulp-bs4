@@ -1,0 +1,64 @@
+html {
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+ 
+}
+*, *:active, *:focus, *:visited {
+    outline: 0;
+    outline:none;
+    -moz-outline-style: none;
+}
+a, a:active, a:focus, 
+button, button:focus, button:active, 
+.btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    outline: none;
+    outline: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+}
+a {
+  transition:color .2s linear;
+  color: #00b0f0;
+  text-decoration: none;
+  &:visited {
+    color:  #00b0f0;
+    text-decoration: none !important;
+    background: none;
+}
+  &:hover {
+    color: #666;
+    text-decoration: none !important;
+  }
+  &:focus {
+    text-decoration: none !important;
+  }
+  &:active {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+      -moz-outline-style: none;
+  }
+}
+
+.scrollup {
+  position:fixed;
+  display: none;
+  bottom: 30px;
+  right: 30px;
+  color: #666;
+  opacity: .80;
+  z-index: 1000;
+  transition: opacity .2s linear;
+    &:hover {
+      opacity: 1;
+      color: #1e1f50;
+      cursor: pointer;
+    }
+}
